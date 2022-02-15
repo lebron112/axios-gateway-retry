@@ -1,0 +1,62 @@
+{
+  "defaultSeverity": "error",
+  "extends": [
+    "tslint:recommended"
+  ],
+  "linterOptions": {
+    "exclude": [
+      "*.json",
+      "src/**/**.scss.d.ts",
+      "src/**/**/**.scss.d.ts",
+      "src/**/**/**/**.scss.d.ts",
+      "src/**/**.css.d.ts",
+      "src/**/**/**.css.d.ts",
+      "src/**/**/**/**.css.d.ts",
+      "dist/*.js"
+    ]
+  },
+  "rules": {
+    "align": false,
+    "array-type": false,
+    "member-access": true,
+    "no-console": false,
+    "prefer-for-of":false,
+    "quotemark": [
+      false,
+      "single"
+    ],
+    "indent": [
+      true,
+      "spaces",
+      2
+    ],
+    "semicolon": [
+      true
+    ],
+    "ordered-imports": false,
+    "object-literal-sort-keys": false,
+    "no-trailing-whitespace": false,
+    "no-consecutive-blank-lines": true,
+    "arrow-parens": false,
+    "no-empty": false,
+    "class-name": true,
+    "import-spacing": true,
+    "trailing-comma": false,
+    "interface-name": [
+      true,
+      "always-prefix"
+    ],
+    "no-var-requires": false,
+    "no-shadowed-variable": false,
+    "curly": false,
+    "no-bitwise": false,
+    "no-unused-expression": false,
+    "member-ordering": false,
+    "only-arrow-functions": false,
+    "no-unnecessary-initializer": true,
+    "max-line-length": [
+      true,
+      150
+    ]
+  }
+}
