@@ -1,5 +1,5 @@
 {
-  "name": "request-retry",
+  "name": "axios-gateway-retry",
   "version": "1.0.0",
   "description": "",
   "main": "dist/cjs.js",
