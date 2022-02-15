@@ -32,5 +32,12 @@
       "import": "./dist/lib.esm.js",
       "require": "./dist/cjs.js"
     }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lebron112/axios-gateway-retry.git"
+  },
+  "bugs": {
+    "url": "https://github.com/lebron112/axios-gateway-retry/issues"
   }
 }
