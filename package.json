@@ -1,16 +1,16 @@
 {
   "name": "axios-gateway-retry",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "dist/cjs.js",
-  "types":"dist/index.d.ts",
+  "types": "dist/index.d.ts",
   "module": "dist/lib.esm.js",
   "scripts": {
     "build": "father build",
     "pre:pub": "npm run build && npm version patch",
     "pub": "npm run pre:pub && npm publish"
   },
-  "files":[
+  "files": [
     "/dist",
     "/src"
   ],
