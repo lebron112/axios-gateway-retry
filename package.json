@@ -4,7 +4,7 @@
   "description": "",
   "main": "dist/cjs.js",
   "types": "dist/index.d.ts",
-  "module": "dist/lib.esm.js",
+  "module": "dist/index.esm.js",
   "scripts": {
     "build": "father build",
     "pre:pub": "npm run build && npm version patch",

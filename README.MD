@@ -38,3 +38,6 @@ instance.interceptors.request.use(fn);
 | retryDelay     | number   |  0                                         |   重试延迟时间                      |
 | mainGateway    | string   |                                            | 主网关，需要和axios配置的baseURL相同 |
 | standbyGateway | string[] |                                            | 备用网关地址列表                    |
+
+# why use this?
+当主节点的网关不可用时，切换到备用节点请求服务器
