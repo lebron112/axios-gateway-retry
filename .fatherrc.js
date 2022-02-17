@@ -15,6 +15,7 @@ export default {
     type: 'rollup',
     mjs: true,
     minify: false,
+    file: 'lib.esm',
   },
   target: 'browser',
 }
