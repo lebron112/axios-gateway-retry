@@ -110,6 +110,10 @@ const axiosGatewayRetry = (axios: AxiosStatic | AxiosInstance, defaultOptions: I
     const { url, baseURL } = config;
     const fullPath = url.startsWith('http') ? url : (baseURL + url);
 
+    if (!mainGateway || typeof mainGateway !== 'string') {
+      return Promise.reject(error);
+    }
+
     if (!currentState.retryCount) {
       if (!fullPath.startsWith(mainGateway)) {
         return Promise.reject(error);
@@ -132,7 +136,7 @@ const axiosGatewayRetry = (axios: AxiosStatic | AxiosInstance, defaultOptions: I
       if (!currentState.retryCount) {
         config.url = fullPath.replace(mainGateway, gatewayList[currentState.retryCount]);
       } else {
-        
+
         config.url = fullPath.replace(gatewayList[currentState.retryCount - 1], gatewayList[currentState.retryCount]);
       }
       currentState.retryCount += 1;
