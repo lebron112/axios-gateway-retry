@@ -1,10 +1,9 @@
 export default {
   entry: 'src/index.ts',
   cjs: {
-    type: 'rollup',
+    type: 'bable',
     minify: false,
     file: './cjs'
-    // file:'./dist/cjs'
   },
   // esm: {
   //   type: 'rollup',

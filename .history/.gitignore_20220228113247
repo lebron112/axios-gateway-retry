@@ -2,4 +2,3 @@ node_modules/
 dist/
 test/
 package-lock.json
-./history

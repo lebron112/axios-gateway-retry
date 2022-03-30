@@ -18,4 +18,7 @@ export default {
     minify: false,
   },
   target: 'browser',
+  extraBabelPlugins:{
+
+  },
 }

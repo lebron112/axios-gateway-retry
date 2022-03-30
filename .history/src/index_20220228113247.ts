@@ -1,5 +1,5 @@
 import { AxiosStatic, AxiosInstance, AxiosRequestConfig } from "axios";
-import isRetryAllowed from './retry-allowed';
+import isRetryAllowed from 'is-retry-allowed';
 
 const namespace = 'request_retry';
 const DEFAULT_SAFE_HEAD_METHOD = ['get', 'head', 'options', 'put', 'delete'];

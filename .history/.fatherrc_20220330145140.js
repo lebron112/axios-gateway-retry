@@ -4,7 +4,6 @@ export default {
     type: 'rollup',
     minify: false,
     file: './cjs'
-    // file:'./dist/cjs'
   },
   // esm: {
   //   type: 'rollup',
